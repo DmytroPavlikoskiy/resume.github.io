@@ -1,0 +1,371 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, a, p, li{
+    font-family: "Raleway", "sans-serif";
+}
+
+.container {
+    width: 100%;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 0 30px 0;
+}
+
+.wrapper_header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #3a3a3a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.header {
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.linc_cont {
+    padding: 10px 5px;
+    cursor: pointer;
+}
+
+.link {
+    font-weight: 700;
+    font-size: 21px;
+    color: aliceblue;
+    transition: .3s ease;
+}
+
+.linc_cont:hover .link {
+    color: deepskyblue;
+}
+
+
+.download_cv {
+    font-family: "Raleway", "sans-serif";
+    font-weight: 700;
+    font-size: 21px;
+    color: deepskyblue;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.download_cv:hover {
+    color: #0076a4;
+}
+
+.info_for_me {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+.main_info_control {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    padding: 20px;
+    gap: 10px;
+}
+
+.img_control {
+    position: relative;
+    width: 300px;
+    max-width: 300px;
+    height: 300px;
+    max-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.wrapper_dark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    max-width: 300px;
+    height: 300px;
+    max-height: 300px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.35);
+    z-index: 2;
+}
+.wrapper_dark h2 {
+    width: 100%;
+    position: absolute;
+    top: 65%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    color: aliceblue;
+    cursor: default;
+}
+
+.img_control img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.title_control h2 {
+    font-size: 26px;
+}
+.contact_info {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.contact_info i {
+    font-size: 20px;
+}
+
+.contact_info a {
+    cursor: pointer;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.about_me {
+    width: 65%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    padding: 5px 0 5px 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.title h2 {
+    font-size: 18px;
+    color: #3a3a3a;
+}
+.about_me__content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.about_me__content p {
+    font-size: 16px;
+    font-weight:500;
+}
+
+.cont_link {
+    font-weight: 700;
+    text-decoration: none;
+    color: deepskyblue;
+}
+
+.my_qualities {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+.qualities_list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.qualities_item {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px 0 5px 20px;
+
+    border-radius: 5px;
+    position: relative;
+}
+
+.qualities_item::before {
+    content: "\2022";
+    position: absolute;
+    left: 5px;
+    color: black;
+}
+
+.my_skills_and_exp {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+}
+
+.skill_list {
+    width: 65%;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px;
+}
+
+.my_skills_content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.skill {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 5px 0 5px 5px;
+}
+
+.skill h3 {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.control_n_l {
+    width: 25%;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    flex-direction: row;
+}
+
+.skill img {
+    width: 50px;
+    height: 50px;
+}
+.img_doc {
+    width: 70px!important;
+}
+
+.progress_line {
+    width: 70%;
+    height: 25px;
+    background-color: lightgray;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 5px;
+    margin-left: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.progress_line::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: var(--progress);
+    background-color: deepskyblue;
+    border-radius: 5px;
+}
+
+.percentages {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 5px;
+    font-family: "Roboto", "sans-serif";
+    font-size: 17px;
+    font-weight: 600;
+    color: #3a3a3a;
+}
+
+.experience_list {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 5px;
+    border-radius: 5px;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.experience h2 {
+
+}
+
+.experience p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.expectations_block {
+    width: 70%;
+    padding: 20px;
+}
+.expectations {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 5px;
+    padding: 10px;
+}
+
+.expectations p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.expectations_list {
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+.expectations_list li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
+
+.expectations_list li h4 {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.expectations_list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #000;
+}

@@ -370,3 +370,32 @@ h1, h2, h3, h4, h5, a, p, li{
     color: #000;
 }
 
+@media screen and (max-width: 1300px) {
+    .info_for_me {
+        width: 100%;
+        flex-direction: column;
+    }
+    .my_skills_and_exp {
+        width: 100%;
+        flex-direction: column;
+    }
+    .main_info_control {
+        width: 100%;
+    }
+    .about_me {
+        width: 100%;
+    }
+    .experience_list {
+        width: 100%;
+    }
+    .skill_list {
+        width: 100%;
+    }
+    .expectations_block {
+        width: 100%;
+    }
+    .header {
+        width: 50%;
+    }
+}
+

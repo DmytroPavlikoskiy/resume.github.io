@@ -16,8 +16,8 @@ h1, h2, h3, h4, h5, a, p, li{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
-    padding: 0 0 30px 0;
+    gap: 10px;
+    padding: 0 0 10px 0;
 }
 
 .wrapper_header {
@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5, a, p, li{
 
 .link {
     font-weight: 700;
-    font-size: 21px;
+    font-size: 17px;
     color: aliceblue;
     transition: .3s ease;
 }
@@ -70,17 +70,19 @@ h1, h2, h3, h4, h5, a, p, li{
 }
 
 .info_for_me {
-    width: 70%;
+    width: 90%;
     display: flex;
-    flex-direction: row;
-    padding: 20px;
-    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    gap: 5px;
     border-radius: 5px;
     margin-top: 50px;
 }
 
 .main_info_control {
-    width: 35%;
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,7 +90,7 @@ h1, h2, h3, h4, h5, a, p, li{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background-color: #FFFFFF;
     border-radius: 5px;
-    padding: 20px;
+    padding: 10px;
     gap: 10px;
 }
 
@@ -155,7 +157,7 @@ h1, h2, h3, h4, h5, a, p, li{
 }
 
 .about_me {
-    width: 65%;
+    width: 90%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 20px;
     background-color: #ffffff;
@@ -220,15 +222,17 @@ h1, h2, h3, h4, h5, a, p, li{
 }
 
 .my_skills_and_exp {
-    width: 70%;
+    width: 90%;
     display: flex;
+    justify-content: center;
     flex-direction: row;
-    gap: 20px;
-    padding: 20px;
+    gap: 10px;
 }
 
 .skill_list {
-    width: 65%;
+    width: 54%;
+    display: flex;
+    flex-wrap: wrap;
     border-radius: 5px;
     background-color: #FFFFFF;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -245,8 +249,9 @@ h1, h2, h3, h4, h5, a, p, li{
 .skill {
     width: 100%;
     display: flex;
-    align-items: center;
-    flex-direction: row;
+    align-items: flex-start;
+    gap: 5px;
+    flex-direction: column;
     padding: 5px 0 5px 5px;
 }
 
@@ -256,7 +261,7 @@ h1, h2, h3, h4, h5, a, p, li{
 }
 
 .control_n_l {
-    width: 25%;
+    width: 50%;
     display: flex;
     gap: 5px;
     align-items: center;
@@ -321,18 +326,13 @@ h1, h2, h3, h4, h5, a, p, li{
     gap: 5px;
 }
 
-.experience h2 {
-
-}
-
 .experience p {
     font-size: 16px;
     font-weight: 500;
 }
 
 .expectations_block {
-    width: 70%;
-    padding: 20px;
+    width: 81%;
 }
 .expectations {
     display: flex;
@@ -369,3 +369,4 @@ h1, h2, h3, h4, h5, a, p, li{
     left: 0;
     color: #000;
 }
+

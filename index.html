@@ -28,8 +28,8 @@
                 <a class="link"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
             </div>
             <div class="linc_cont">
-                <div data-resumeURL="http://localhost:63342/DmitroPavlikovskiy_resume/DmitroPavlikovskiy_resume.html"
-                     class="download_cv" onclick="DownloadCV(this)"><i class="fa-solid fa-download"></i> CV
+                <div data-resumeURL="http://localhost:63342/DmitroPavlikovskiy_resume/index.html"
+                     class="download_cv" id="download_cv"><i class="fa-solid fa-download"></i> CV
                 </div>
             </div>
         </div>
@@ -60,15 +60,16 @@
                 <h2><i class="fa-solid fa-user"></i> ABOUT ME</h2>
             </div>
             <div class="about_me__content">
-                <p>Hello to everyone reading this, my name is Dmytro, my journey in IT began three years ago,
-                    I graduated from the "Red Rocket Mentorship" and almost immediately went to work at the
-                    <a class="cont_link" href="https://www.v-n-v.tech/">VNV Solutions</a> company,
-                    having worked there for a year, after which I started doing my startup I developed my online store.</p>
-                <p>And now I am ready to acquire new knowledge and go further to my peak. I will be glad to do it together with you,
-                    and I hope that we will help each other in this long, difficult, but pleasant and interesting
-                    way.</p>
-                <p>I like to create new things, deploy them, always looking for new information and improving my
-                    skills</p>
+                <p>Hello to everyone reading this. My name is Dmytro, and my journey in IT began three years ago when I
+                    graduated from the "Red Rocket Mentorship" program. I almost immediately joined the <a
+                            class="cont_link" href="https://www.v-n-v.tech/">VNV Solutions</a> company, where I worked
+                    for a year. Following that, I embarked on my startup journey and developed my online store.</p>
+                <p>Now, I am ready to acquire new knowledge and further advance in my career. I am eager to embark on
+                    this journey with you, hoping that we can support each other through this challenging yet rewarding
+                    path.</p>
+                <p>I enjoy creating new things, deploying them, and constantly seeking new information to improve my
+                    skills.</p>
+
             </div>
             <div class="my_qualities">
                 <div class="title">
@@ -93,20 +94,22 @@
             <div class="experience">
                 <h2>Python Developer</h2>
                 <h3>VNV Solutions | 09.2022 — 10.2023</h3>
-                <p>— In this company, I learned Django/Django REST framework well, I also had to do small projects on Flask.
-                    Also, had a job with web-scraping. I also had the opportunity to work with the creation of telegram bots.
-                    Sometimes I also wrote frontend, HTML, CSS, JS Native.
-                    I also developed SRM for traffic arbitration, where we used the Django rest framework,
-                    it was an API that was pinged on one side by Telegram bot, and on the other side, the front was written in React JS.</p>
+                <p>During my time at this company, I gained a strong proficiency in the Django/Django REST framework. I
+                    also completed small projects using Flask and worked extensively on web scraping tasks.
+                    Additionally, I had the opportunity to develop Telegram bots and occasionally worked on frontend
+                    technologies such as HTML, CSS, and native JS.</p>
+                <p>One of my notable achievements was the development of an SRM system for traffic arbitration. This
+                    system utilized the Django REST framework, serving as an API that interacted with a Telegram bot on
+                    one end, while the frontend was implemented in React JS on the other.</p>
             </div>
             <div class="experience">
                 <h2>Full stack Developer</h2>
                 <h3>Own startup | 11.2023 — 04.2024</h3>
-                <p>— This startup is an online store that my friend and I should have opened.
-                    In this project, I used Django native, also in this project,
-                    I used celery, for various tasks, such as for example tracking payment status, etc.
-                    I also used such APIs as NovaPoshtaAPI, LiqpayAPI.
-                    This project is currently frozen for an unknown period.</p>
+                <p>This startup was an online store that my friend and I intended to open. In this project, I utilized
+                    Django natively, as well as Celery for various tasks such as tracking payment statuses. I also
+                    integrated APIs such as NovaPoshtaAPI and LiqpayAPI.</p>
+                <p>However, this project is currently on hold for an indefinite period.</p>
+
             </div>
         </div>
         <div class="skill_list">
@@ -187,31 +190,29 @@
                 <h2>My expectations from the company</h2>
             </div>
 
-            <p>I am looking for a friendly, adequate team, with whom it will be possible to develop together,
-                to conquer new heights, with cool and interesting projects.</p>
+            <p>I am looking for a friendly and capable team with whom I can develop together, aiming to reach new
+                heights and work on cool and interesting projects.</p>
             <ul class="expectations_list">
-                <li><h4>Flexible schedule.</h4></li>
-                <li><h4>Timely wages.</h4></li>
-                <li><h4>Development perspective.</h4></li>
-                <li><h4>Friendly team.</h4></li>
+                <li><h4>Flexible schedule</h4></li>
+                <li><h4>Timely wages</h4></li>
+                <li><h4>Opportunities for professional development</h4></li>
+                <li><h4>Supportive and friendly team environment</h4></li>
             </ul>
         </div>
     </div>
 </div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 <script>
-    function DownloadCV(resume) {
-        let resumeURL = resume.getAttribute("data-resumeURL");
 
-        let link = document.createElement("a");
-        link.href = resumeURL;
-        link.target = "_blank";
-        link.setAttribute("download", "DmitroPavlikovskiy_resume.html");
-        document.body.appendChild(link);
-        link.click();
-
-        document.body.removeChild(link);
-    }
+    // Виводимо у консоль
+    console.log(`data:image/jpeg;base64,${base64Image}`);
+    jQuery(document).ready(function () {
+        $('#download_cv').click(function () {
+            window.print()
+        })
+    })
 </script>
 
 </body>

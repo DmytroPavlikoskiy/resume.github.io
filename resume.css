@@ -21,9 +21,6 @@ h1, h2, h3, h4, h5, a, p, li{
 }
 
 .wrapper_header {
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     background-color: #3a3a3a;
     display: flex;
@@ -107,19 +104,19 @@ h1, h2, h3, h4, h5, a, p, li{
     z-index: 1;
 }
 
-.wrapper_dark {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 300px;
-    max-width: 300px;
-    height: 300px;
-    max-height: 300px;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.35);
-    z-index: 2;
-}
+/*.wrapper_dark {*/
+/*    !*position: absolute;*!*/
+/*    !*top: 50%;*!*/
+/*    !*left: 50%;*!*/
+/*    !*transform: translate(-50%, -50%);*!*/
+/*    !*width: 300px;*!*/
+/*    !*max-width: 300px;*!*/
+/*    !*height: 300px;*!*/
+/*    !*max-height: 300px;*!*/
+/*    !*border-radius: 50%;*!*/
+/*    !*background-color: rgba(0, 0, 0, 0.35);*!*/
+/*    !*z-index: 2;*!*/
+/*}*/
 .wrapper_dark h2 {
     width: 100%;
     position: absolute;
@@ -424,6 +421,12 @@ h1, h2, h3, h4, h5, a, p, li{
         width: var(--progress);
         background-color: deepskyblue;
         border-radius: 5px;
+    }
+}
+
+@media print {
+    .progress_line::before {
+        background-color: deepskyblue !important;
     }
 }
 
